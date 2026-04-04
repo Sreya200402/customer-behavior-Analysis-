@@ -1,115 +1,88 @@
-# customer-behavior-Analysis-
-Analysis on Customer Behaviour Using Python + SQL + Power BI
-# 📊 Customer Shopping Behavior Analysis
+# Customer Behavior Analytics Project – SQL, Python & Power BI
+
+## 🎯 Business Problem
+
+A retail company wants to understand customer shopping behavior to improve sales, retention, and customer experience.
+
+This project answers:
+> How can customer data be used to identify trends, improve engagement, and optimize business strategies?
 
 ---
 
-## 📌 Overview
-This project analyzes customer shopping behavior to uncover meaningful patterns, trends, and insights that support data-driven business decisions.
+## 📊 Project Overview
 
-The workflow covers the complete data analytics lifecycle—from data loading and cleaning to exploratory analysis, SQL-based querying, and interactive dashboard creation.
+This is an end-to-end data analytics project covering the full workflow:
+
+- Data Cleaning & Preparation (Python)
+- Data Storage & Analysis (SQL Server / MYSQL WORKBENCH)
+- Data Visualization (Power BI)
+- Business Insights & Reporting
 
 ---
 
 ## 📁 Dataset
-- ~3,900 customer records  
-- 18 features including:
 
-### Key Feature Groups
-- **Demographics:** Age, Gender, Location, Subscription Status  
-- **Transactions:** Item Purchased, Category, Purchase Amount  
-- **Behavior:** Frequency of Purchases, Discounts, Review Ratings, Shipping Type  
-
-- Missing values were identified in the **Review Rating** column and handled during preprocessing.
-
----
-
-## 🛠️ Tools & Technologies
-- **Python (Pandas, NumPy, Matplotlib, Seaborn)** – Data cleaning & EDA  
-- **MySQL Workbench** – SQL analysis and business queries  
-- **Power BI** – Interactive dashboard creation  
-- **Gamma** – Presentation (PPT) creation  
+- Rows: 3,900  
+- Columns: 18  
+- Includes:
+  - Customer demographics  
+  - Purchase behavior  
+  - Product details  
+  - Transaction patterns  
 
 ---
 
-## 🔄 Project Steps
+## ⚙️ Tech Stack
 
-### 1. Data Loading & Cleaning (Python)
-- Imported dataset using Pandas  
-- Handled missing values using median imputation  
-- Standardized column names (snake_case)  
+- Python (Pandas, NumPy)
+- SQL (MYSQL WORKBENCH)
+- Power BI (Dashboard)
+- CSV Dataset
+
+---
+
+## 🔄 Project Workflow
+
+### 1. Data Preparation (Python)
+- Handled missing values (Review Rating)
+- Standardized column names
 - Created new features:
-  - `age_group`
-  - `purchase_frequency_days`
+  - Age groups
+  - Purchase frequency metrics
 
-### 2. Exploratory Data Analysis (EDA)
-- Analyzed distributions of spending and ratings  
-- Identified trends, patterns, and outliers  
-- Performed feature-level analysis  
+### 2. Data Analysis (SQL)
+- Revenue analysis by gender
+- Customer segmentation (New, Returning, Loyal)
+- Shipping preference analysis
+- Discount impact analysis
+- Product performance insights
 
-### 3. SQL Analysis (MySQL Workbench)
-- Revenue analysis by gender and age group  
-- Customer segmentation (New, Returning, Loyal)  
-- Discount vs spending behavior  
-- Product performance and rating analysis  
-
-### 4. Dashboard Development (Power BI)
-- Built interactive dashboards to visualize:
-  - Customer segments  
-  - Revenue trends  
-  - Product/category performance  
-- Enabled filtering and drill-down capabilities  
-
-### 5. Reporting & Presentation
-- Created a structured analytical report  
-- Designed a professional presentation using Gamma  
+### 3. Visualization (Power BI)
+- Interactive dashboard showing:
+  - Revenue trends
+  - Customer segments
+  - Product performance
 
 ---
 
-## 📊 Dashboard
-The Power BI dashboard provides:
-- Customer segmentation insights  
-- Revenue and spending trends  
-- Category-level performance  
-- Interactive filters for deeper analysis  
+## 💡 Key Insights
+
+- Female customers generated higher revenue compared to male customers  
+- Express shipping users showed higher purchase value  
+- Loyal customers contributed significantly to repeat revenue  
+- Certain product categories depend heavily on discounts  
 
 ---
 
-## 📈 Results & Insights
-- Loyal customers contribute significantly to total revenue  
-- Discounts influence purchasing behavior but vary across segments  
-- Certain product categories consistently perform better  
-- Customer satisfaction varies across products  
+## 📁 Project Files
+
+- Python Notebook (EDA & Cleaning)
+- SQL Scripts (Analysis Queries)
+- Power BI Dashboard (.pbix)
+- Final Report & Presentation
 
 ---
 
-## 🚀 How to Run the Project
+## 🛡️ License
 
-### 1. Python Analysis
-Install required libraries:
-pip install pandas numpy matplotlib seaborn
-
-- Open the Jupyter Notebook  
-- Run all cells for data cleaning and EDA  
-
-### 2. SQL Analysis
-- Import dataset into **MySQL Workbench**  
-- Run queries from the `.sql` file  
-
-### 3. Power BI Dashboard
-- Open `.pbix` file in Power BI Desktop  
-- Refresh data if required  
-
-### 4. Presentation
-- View the PPT created using Gamma  
-
----
-
-## 💡 Business Value
-This project demonstrates how data analytics can:
-- Improve customer targeting  
-- Enhance retention strategies  
-- Support data-driven decision making  
-- Optimize marketing and pricing strategies  
-
----
+This project is licensed under the MIT License.
